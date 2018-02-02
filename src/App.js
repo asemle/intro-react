@@ -27,9 +27,9 @@ class App extends Component {
   }
 
   render() {
-    let list = this.state.hobbies.map((hobby) => {
+    let list = this.state.hobbies.map((hobby, index) => {
       return (
-      <p>{hobby}</p>
+      <p key={index}>{hobby}</p>
       )
     })
     var myName = "Andrew Semle";

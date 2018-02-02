@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header.js'
+import Footer from './components/Footer.js'
 
 class App extends Component {
   constructor(props) {
@@ -42,6 +43,7 @@ class App extends Component {
         <input type="text" value={this.state.inputText} onChange={(e) => this.handleInputChange(e)}/>
         <button onClick={() => this.addHobby()}>Add Hobby</button>
         <div>{list}</div>
+        <Footer />
       </div>
     );
   }
